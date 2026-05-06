@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Planner{% endblock %}
+
+{% block content %}
+
+<h2>📅 Study Planner</h2>
+
+<form method="POST">
+    <label>Subjects (comma separated):</label><br>
+    <input type="text" name="subjects"><br><br>
+
+    <label>Exam Date:</label><br>
+    <input type="date" name="exam_date"><br><br>
+
+    <button type="submit">Generate Plan</button>
+</form>
+
+{% if plan %}
+    <h3>Your Plan</h3>
+    <ul>
+    {% for day, subject in plan.items() %}
+        <li>{{ day }} → {{ subject }}</li>
+    {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}

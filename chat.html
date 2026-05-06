@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}AI Tutor{% endblock %}
+
+{% block content %}
+
+<h2>🤖 Ask Your Tutor</h2>
+
+<form method="POST" style="margin-bottom:20px;">
+    <input 
+        type="text" 
+        name="topic" 
+        placeholder="Enter topic (e.g., Stack, Recursion)" 
+        required
+        style="width:300px; padding:10px; border-radius:5px; border:1px solid #ccc;"
+    >
+    <button 
+        type="submit"
+        style="padding:10px 15px; border:none; background:#2c3e50; color:white; border-radius:5px; cursor:pointer;"
+    >
+        Explain
+    </button>
+</form>
+
+{% if explanation %}
+    <h3>📘 Explanation</h3>
+
+    <div style="
+        background:#f4f6f8;
+        padding:20px;
+        border-radius:10px;
+        line-height:1.6;
+        font-size:15px;
+        box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+    ">
+        {{ explanation | replace('\n', '<br>') | safe }}
+    </div>
+{% endif %}
+
+{% endblock %}

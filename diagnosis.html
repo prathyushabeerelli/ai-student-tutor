@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}Diagnosis{% endblock %}
+
+{% block content %}
+
+<h2>🧪 Learning Diagnosis</h2>
+
+<form method="POST">
+    <p>1. What is 2 + 2?</p>
+    <input type="text" name="q1"><br><br>
+
+    <p>2. What is a stack?</p>
+    <input type="text" name="q2"><br><br>
+
+    <p>3. What is a queue?</p>
+    <input type="text" name="q3"><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+{% if result %}
+    <h3>Result</h3>
+    <p>Score: {{ result.score }}/{{ result.total }}</p>
+    <p>Percentage: {{ result.percentage }}%</p>
+    <p>Level: {{ result.level }}</p>
+
+    <p>Weak Areas: {{ result.weak_topics }}</p>
+{% endif %}
+
+{% endblock %}
