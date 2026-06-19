@@ -1,31 +1,35 @@
-# 🎓 AI Student Tutor
+# AI Student Tutor
 
-🚀 An AI-powered web application that helps students learn smarter.
+## Overview
 
-## ✨ Features
+AI Student Tutor is an intelligent learning assistant designed to provide personalized academic support to students.
 
-* 📊 Diagnosis system (identify weak areas)
-* 📅 Personalized study planner
-* 🤖 AI Tutor (explains topics clearly)
-* 📝 Mock test system
+The system helps learners understand concepts, receive study guidance, and improve learning efficiency.
 
-## 🛠 Tech Stack
+## Features
 
-* Python (Flask)
-* HTML, CSS
-* OpenRouter API
+- Personalized Learning Support
+- Question Answering
+- Study Guidance
+- AI-powered Assistance
+- Learning Resource Recommendations
 
-## ▶️ Run Locally
+## Technologies Used
 
-pip install -r requirements.txt
-python run.py
+- Python
+- Artificial Intelligence
+- Machine Learning
+- NLP
 
-## 🌐 Live Demo
+## Future Enhancements
 
-(Will be added after deployment)
+- Voice Assistant
+- PDF Analysis
+- Lecture Note Summarization
+- Quiz Generation
 
-## 💡 Future Improvements
+## Author
 
-* User login system
-* Progress tracking
-* Adaptive AI learning
+Prathyusha Beerelli
+B.Tech CSE (AI & ML)
+SR University
